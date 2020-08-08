@@ -9,7 +9,7 @@ body {
 
 main {
   section {
-    padding: 0px 150px;
+    padding: 0px 140px 40px 140px;
   }
   .banner {
     position: relative;
@@ -19,6 +19,9 @@ main {
       display: flex;
       align-items: center;
       justify-content: center;
+      img {
+        width: 100%;
+      }
     }
     .content {
       position: absolute;
@@ -61,6 +64,151 @@ main {
         min-width: 240px;
         text-transform: uppercase;
         text-decoration: none;
+      }
+    }
+  }
+  .half {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    picture {
+      grid-column: 1;
+      img {
+        width: 100%;
+      }
+    }
+    .content_wrap {
+      background-color: #f3ede8;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .category {
+          font-family: "proxima-nova", "Helvetica", "Arial", sans-serif;
+          font-size: 10px;
+          letter-spacing: 2.2px;
+          line-height: 15px;
+          margin-bottom: 27px;
+          text-transform: uppercase;
+        }
+        .title {
+          font-family: "freight-display-pro", "Times New Roman", serif;
+          font-size: 34px;
+          line-height: 38px;
+          margin: auto;
+          max-width: 440px;
+          text-align: center;
+        }
+        a {
+          margin-top: 65px;
+          border: 1px solid #414141;
+          box-sizing: border-box;
+          color: #414141;
+          cursor: pointer;
+          display: inline-block;
+          font-family: "proxima-nova", "Helvetica", "Arial", sans-serif;
+          font-size: 10px;
+          height: 55px;
+          letter-spacing: 2.2px;
+          line-height: 55px;
+          max-width: 100%;
+          min-width: 240px;
+          padding: 0 50px;
+          text-transform: uppercase;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .products {
+    .title_wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .category {
+        color: #414141;
+        font-family: "proxima-nova", "Helvetica", "Arial", sans-serif;
+        font-size: 10px;
+        letter-spacing: 2.2px;
+        line-height: 15px;
+        margin-bottom: 17px;
+      }
+      .title {
+        text-transform: uppercase;
+        font-family: "freight-display-pro", "Times New Roman", serif;
+        font-size: 34px;
+        line-height: 38px;
+      }
+    }
+    .item_wrap {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(min-content, 1fr));
+
+      .item {
+        picture {
+          img {
+            width: 100%;
+          }
+        }
+        .category {
+          font-family: "proxima-nova", "Helvetica", "Arial", sans-serif;
+          font-size: 10px;
+          letter-spacing: 2.2px;
+          line-height: 15px;
+          min-height: 15px;
+          text-transform: uppercase;
+        }
+        .title {
+          font-family: "freight-display-pro", "Times New Roman", serif;
+          font-size: 30px;
+          font-style: italic;
+          line-height: 38px;
+          margin-bottom: 15px;
+        }
+        .price {
+          color: #9d9d9c;
+          opacity: 1;
+          letter-spacing: 2px;
+          font-family: "proxima-nova", "Helvetica", "Arial", sans-serif;
+          font-size: 10px;
+          height: 23px;
+          line-height: 24px;
+        }
+        .cart_btn {
+          margin-top: 32px;
+          margin-bottom: 10px;
+          max-width: 90%;
+          min-width: 190px;
+          padding: 0;
+          width: 240px;
+          border: 1px solid #414141;
+          box-sizing: border-box;
+          color: #414141;
+          cursor: pointer;
+          display: inline-block;
+          font-family: "proxima-nova", "Helvetica", "Arial", sans-serif;
+          font-size: 10px;
+          height: 55px;
+          letter-spacing: 2.2px;
+          line-height: 55px;
+          text-transform: uppercase;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(min-content, 1fr));
+    .image {
+      img {
+        width: 100%;
       }
     }
   }
